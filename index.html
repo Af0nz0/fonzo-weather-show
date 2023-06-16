@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonzo weather site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Fonzo Weather view</h1>
+    <form id="searchForm">
+      <input type="text" id="cityInput" placeholder="Enter a city">
+      <button type="submit">Search</button>
+    </form>
+    <div id="unitToggle">
+      <label>
+        <input type="radio" name="unit" value="metric" checked>
+        Celsius
+      </label>
+      <label>
+        <input type="radio" name="unit" value="imperial">
+        Fahrenheit
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section id="currentWeather">
+      <h2>Current Weather</h2>
+      <div id="currentWeatherData"></div>
+    </section>
+
+    <section id="forecast">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastData"></div>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Search History</h2>
+    <ul id="historyList"></ul>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
